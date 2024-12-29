@@ -7,6 +7,9 @@
 body {
  background-color:#43a047;
 }
+button {
+ cursor: pointer;
+}
 .wrapper {
  background-color: white;
  width: 80vmin;
@@ -24,9 +27,8 @@ body {
  margin: 10px;
 }
 
-.slider {
- display: flex;
- flex-direction: column;
+.slider label {
+ display: block;
 }
 
 .options-wrapper button{
@@ -38,9 +40,19 @@ body {
 }
 
 .options-wrapper input[type="color"] {
+ cursor: pointer;
  background: transparent;
  width: 70px;
  height: 35px;
  border: none;
  appearance: none;
+}
+
+.container {
+ display:flex;
+}
+.row div{
+ width:18px;
+ height: 18px;
+ border: 1px solid black;
 }
